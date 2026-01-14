@@ -1,0 +1,123 @@
+:root {
+    --bg: #050505;
+    --green: #eee;
+    --text: #d1d1d1;
+    --muted: #7a7a7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px 160px;
+}
+
+.hero h1 {
+    color: var(--green);
+    font-size: 64px;
+    letter-spacing: 6px;
+}
+
+.hero h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--muted);
+}
+
+.hero p {
+    margin: 40px auto;
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid var(--green);
+    padding: 14px 32px;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: #000;
+}
+
+/* SECTIONS */
+section {
+    border-top: 1px solid #111;
+}
+
+h3 {
+    color: var(--green);
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.box {
+    background: #080808;
+    padding: 30px;
+    border: 1px solid #111;
+}
+
+.box p {
+    color: var(--muted);
+}
+
+/* CODE BLOCK */
+pre {
+    background: #000;
+    border: 1px solid #111;
+    padding: 30px;
+    color: var(--green);
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    color: var(--muted);
+    border-top: 1px solid #111;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 42px;
+    }
+}
